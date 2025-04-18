@@ -25,7 +25,7 @@ const Footer = () => {
             <span className="sr-only">Facebook</span>
           </Button>
         </Link>
-        <Link href="mailto:contact@bellamakeup.com">
+        <Link href="mailto:info@anchalverma.in">
           <Button variant="ghost" size="icon">
             <Mail className="h-5 w-5" />
             <span className="sr-only">Email</span>

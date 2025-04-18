@@ -78,7 +78,7 @@ export default function Sidebar({
             key={idx}
             href={item.link}
             className="flex items-center gap-4 px-4 py-2 hover:bg-white hover:text-black cursor-pointer transition-colors"
-            onClick={()=>setCollapsed(!collapsed)}
+            onClick={()=>setCollapsed}
           >
             <div
               className={`flex items-center gap-5 transition-opacity duration-100 ${
