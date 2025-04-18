@@ -1,5 +1,4 @@
 import React from 'react'
-import { VscAccount } from "react-icons/vsc";
 import Image from 'next/image';
 
 interface reviewProps{
