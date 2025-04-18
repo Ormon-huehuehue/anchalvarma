@@ -34,10 +34,11 @@ const Header = () => {
       showHeader ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
+      <div className='flex items-center justify-center'>
       <button
               id = 'sidebar-button'
               onClick={() => setCollapsed(!collapsed)}
-              className={`text-black duration-300 block hover:bg-primary p-2 m-4  hover:text-white transition-all rounded-full ${!collapsed ? 'opacity-0' : 'opacity-100'}`}
+              className={`text-black duration-300 absolute left-0  hover:bg-primary p-2 ml-3  hover:text-white transition-all rounded-full ${!collapsed ? 'opacity-0' : 'opacity-100'}`}
             >
               <ChevronRight
                 size={20}
@@ -45,13 +46,15 @@ const Header = () => {
                   !collapsed ? 'rotate-180' : ''
                 }`}
               />
-        </button>
+      </button>
+      </div>
       <div className="w-full md:mx-16 mx-5 flex h-16 items-center justify-between">
-      
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-lg font-bold tracking-tight hover:text-muted-foreground transition-colors duration-200 absolute">
-            Anchal Varma
-          </span>
+        <Link
+          href="/"
+          className="text-lg font-bold tracking-tight hover:text-muted-foreground transition-colors duration-200 
+          mx-auto md:mx-0 absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0"
+        >
+          Anchal Varma
         </Link>
         <nav className="hidden md:flex gap-6">
           <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
@@ -70,11 +73,10 @@ const Header = () => {
             Contact
           </Link>
         </nav>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 absolute md:relative right-0 mr-3">
           <Link href="#contact">
             <Button>Book Now</Button>
           </Link>
-         
         </div>
       </div>
     </header>

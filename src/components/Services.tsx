@@ -54,7 +54,7 @@ const Services = () => {
             </li>
           </ul>
           <div className="mt-6 text-center">
-            <p className="font-medium">Starting at $250</p>
+            {/* <p className="font-medium">Starting at $250</p> */}
           </div>
         </div>
 
@@ -102,7 +102,7 @@ const Services = () => {
             </li>
           </ul>
           <div className="mt-6 text-center">
-            <p className="font-medium">Starting at $150</p>
+            <p className="font-medium"></p>
           </div>
         </div>
 
@@ -152,7 +152,7 @@ const Services = () => {
             </li>
           </ul>
           <div className="mt-6 text-center">
-            <p className="font-medium">Starting at $120</p>
+            <p className="font-medium"></p>
           </div>
         </div>
       </div>
