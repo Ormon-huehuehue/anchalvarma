@@ -52,7 +52,7 @@ const Header = () => {
         <Link
           href="/"
           className="text-lg font-bold tracking-tight hover:text-muted-foreground transition-colors duration-200 
-          mx-auto md:mx-0 absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0"
+          mx-auto md:mx-0 absolute ml-10  md:static md:translate-x-0"
         >
           Anchal Varma
         </Link>
