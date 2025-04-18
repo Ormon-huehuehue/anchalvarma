@@ -19,10 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={inter.className} >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header/>
+          <div className="px-5 md:px-10">
           {children}
+          </div>
           <Footer/>
         </ThemeProvider>
       </body>

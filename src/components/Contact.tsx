@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import { Instagram, Facebook, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -5,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-muted/50">
+    <section id="contact" className="py-16 md:py-24 ">
     <div className="container">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Contact Me</h2>

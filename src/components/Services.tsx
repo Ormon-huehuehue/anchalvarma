@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="py-16 md:py-24 ">
     <div className="container">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Services</h2>

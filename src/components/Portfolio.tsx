@@ -1,10 +1,14 @@
 import React from 'react'
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import PortfolioWidget from './Portfolio-widget';
 
 const portfolioData = [
+  {
+    imageUrl : "/bride5.jpeg",
+    title : "Makeup",
+    caption : "Bridal / Editorial / Natural"
+  },
   {
     imageUrl : "/anchal.jpeg",
     title : "Makeup",
@@ -24,7 +28,12 @@ const portfolioData = [
     imageUrl : "/bride6.jpeg",
     title : "Makeup",
     caption : "Bridal / Editorial / Natural"
-  }
+  },
+  {
+    imageUrl : "/bride4.jpeg",
+    title : "Makeup",
+    caption : "Bridal / Editorial / Natural"
+  },
 ]
 
 

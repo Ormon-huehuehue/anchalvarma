@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button"
 
 
 const header = () => {
-  return (
-    <header className="sticky flex justify-center">
-    <div className="container flex h-16 items-center justify-between">
+return (
+<header className="sticky flex justify-center z-10 bg-white">
+    <div className="w-full md:mx-10 mx-5 flex h-16 items-center justify-between">
       <Link href="/" className="flex items-center space-x-2">
-        <span className="text-xl font-bold tracking-tight">Anchal Varma</span>
+        <span className="text-lg font-bold tracking-tight hover:text-muted-foreground transition-colors duration-200 absolute">Anchal Varma</span>
       </Link>
       <nav className="hidden md:flex gap-6">
         <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
@@ -51,8 +51,8 @@ const header = () => {
         </button>
       </div>
     </div>
-  </header>
-  )
+</header>
+)
 }
 
 export default header
