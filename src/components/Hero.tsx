@@ -11,11 +11,11 @@ const Hero = () => {
         src="/bride7.jpeg"
         alt="Makeup artist at work"
         fill
-        className="object-cover [object-position:100%_60%] brightness-50 opacity-100"
+        className="object-cover md:[object-position:20%_60%] [object-position:0%] brightness-50 opacity-100"
         priority
       />
     </div>
-    <div className="container relative z-10 flex flex-col items-center justify-center py-24 text-center md:py-32">
+    <div className="container relative z-5 flex flex-col items-center justify-center py-24 text-center md:py-32">
       <h1 className="text-4xl text-white font-bold tracking-tight sm:text-5xl md:text-6xl">
         Transform Your Look with <span className="text-white">Professional Makeup</span>
       </h1>

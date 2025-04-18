@@ -1,7 +1,6 @@
 import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/Footer"
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -22,14 +21,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className} >
         <SpeedInsights/>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header/>
           <div className="px-5 md:px-10">
-            {children}
+          {children}
           </div>
           <Footer/>
-        </ThemeProvider>
       </body>
     </html>
+ 
   )
 }

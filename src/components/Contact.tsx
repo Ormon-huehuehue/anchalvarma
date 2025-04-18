@@ -74,8 +74,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Facebook</h4>
-                  <p className="text-muted-foreground">Anchal Verma</p>
-                  <p className="mt-1 text-sm text-muted-foreground"></p>
+                  <p className="text-muted-foreground">@anchalvermamua</p>
+                  <p className="mt-1 text-sm text-muted-foreground">Anchal Verma</p>
                 </div>
               </div>
             </div>
