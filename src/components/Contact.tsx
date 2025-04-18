@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import { Instagram, Facebook, Mail, Phone } from "lucide-react";
+import { Instagram, Facebook, Mail, Phone, MessageCircleMore, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 md:py-24 ">
+    <section id="contact" className="md:mb-24 mb-15">
     <div className="container">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Contact Me</h2>
@@ -30,7 +30,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <p className="text-muted-foreground">(123) 456-7890</p>
+                  <p className="text-muted-foreground">+91 8750044212</p>
                   <p className="mt-1 text-sm text-muted-foreground">Available Mon-Fri, 9am-6pm</p>
                 </div>
               </div>
@@ -41,8 +41,19 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-muted-foreground">contact@bellamakeup.com</p>
-                  <p className="mt-1 text-sm text-muted-foreground">I'll respond within 24 hours</p>
+                  <p className="text-muted-foreground">info@anchalverma.in</p>
+                  <p className="mt-1 text-sm text-muted-foreground"></p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                  <MessageSquare className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-medium">Whatsapp</h4>
+                  <p className="text-muted-foreground">099 99 099225</p>
+                  <p className="mt-1 text-sm text-muted-foreground"></p>
                 </div>
               </div>
 
@@ -52,7 +63,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Instagram</h4>
-                  <p className="text-muted-foreground">@bellamakeup</p>
+                  <p className="text-muted-foreground">@anchalvermamua</p>
                   <p className="mt-1 text-sm text-muted-foreground">DM me for quick questions</p>
                 </div>
               </div>
@@ -63,8 +74,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Facebook</h4>
-                  <p className="text-muted-foreground">Bella Makeup Artistry</p>
-                  <p className="mt-1 text-sm text-muted-foreground">Follow for latest updates</p>
+                  <p className="text-muted-foreground">Anchal Verma</p>
+                  <p className="mt-1 text-sm text-muted-foreground"></p>
                 </div>
               </div>
             </div>

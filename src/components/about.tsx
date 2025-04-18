@@ -39,7 +39,7 @@ const About = () => {
                 <span className="sr-only">Instagram</span>
               </Button>
             </Link>
-            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com/anchalvermamua/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
