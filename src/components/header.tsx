@@ -57,19 +57,19 @@ const Header = () => {
           Anchal Varma
         </Link>
         <nav className="hidden md:flex gap-6">
-          <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link href="/#about" className="text-sm font-medium transition-colors hover:text-primary">
             About
           </Link>
-          <Link href="#services" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link href="/#services" className="text-sm font-medium transition-colors hover:text-primary">
             Services
           </Link>
-          <Link href="#portfolio" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link href="/#portfolio" className="text-sm font-medium transition-colors hover:text-primary">
             Portfolio
           </Link>
-          <Link href="#testimonials" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link href="/#testimonials" className="text-sm font-medium transition-colors hover:text-primary">
             Testimonials
           </Link>
-          <Link href="#contact" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link href="/#contact" className="text-sm font-medium transition-colors hover:text-primary">
             Contact
           </Link>
         </nav>

@@ -34,15 +34,6 @@ export default async function AuthButton() {
             >
               <Link href="/sign-in">Sign in</Link>
             </Button>
-            <Button
-              asChild
-              size="sm"
-              variant={"default"}
-              disabled
-              className="opacity-75 cursor-none pointer-events-none"
-            >
-              <Link href="/sign-up">Sign up</Link>
-            </Button>
           </div>
         </div>
       </>
@@ -50,7 +41,7 @@ export default async function AuthButton() {
   }
   return user ? (
     <div className="flex items-center gap-4">
-      Hey, {user.email}!
+      Hey, <span className='font-medium'>{user.email} </span> !
       <form action={signOutAction}>
         <Button type="submit" variant={"outline"}>
           Sign out

@@ -1,8 +1,20 @@
 import React from "react";
 import { createClient } from "@/utils/supabase/server";
+import { redirect } from "next/navigation";
+import SupabaseNav from "@/components/SupabaseNav";
 
 const page = async () => {
   const supabase = await createClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+
+  if (!user) {
+    return redirect("/sign-in");
+  }
+
 
   const { data, error } = await supabase.from("contact_form_submissions").select("*");
   console.log("data : ",data)
@@ -12,8 +24,9 @@ const page = async () => {
   }
 
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-semibold mb-4">Form Submissions Dashboard</h1>
+    <div className="px-8 h-[80dvh]">
+      <SupabaseNav/>
+      <h1 className="text-2xl font-semibold my-4">Form Submissions Dashboard</h1>
       {data?.length === 0 ? (
         <p>No submissions found.</p>
       ) : (
