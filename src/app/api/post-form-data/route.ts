@@ -31,7 +31,6 @@ export async function POST(request: Request) {
       service_interested_in,
       preferred_date,
       message,
-      consent,
     }]);
 
     if (error) {

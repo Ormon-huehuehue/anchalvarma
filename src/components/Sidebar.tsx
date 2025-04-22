@@ -10,11 +10,11 @@ import {
 import { useEffect, useState, useRef } from 'react'
 
 const navItems = [
-  { icon: <BookOpen size={20} />, label: 'About', link: '#about' },
-  { icon: <Info size={20} />, label: 'Services', link: '#services' },
-  { icon: <Workflow size={20} />, label: 'Portfolio', link: '#portfolio' },
-  { icon: <UserSearch size={20} />, label: 'Testimonials', link: '#testimonials' },
-  { icon: <Mail size={20} />, label: 'Contact', link: '#contact' },
+  { icon: <BookOpen size={20} />, label: 'About', link: '/#about' },
+  { icon: <Info size={20} />, label: 'Services', link: '/#services' },
+  { icon: <Workflow size={20} />, label: 'Portfolio', link: '/#portfolio' },
+  { icon: <UserSearch size={20} />, label: 'Testimonials', link: '/#testimonials' },
+  { icon: <Mail size={20} />, label: 'Contact', link: '/#contact' },
 ]
 
 export default function Sidebar({

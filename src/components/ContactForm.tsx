@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
-import React, { useState, useEffect} from 'react'
+import React, { useState} from 'react'
 import axios from "axios"
 import { Button } from "@/components/ui/button";
 
@@ -19,6 +19,7 @@ const ContactForm = () => {
       const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
     
       const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        //@ts-expect-error : checked doesn't exist on given type
         const { name, value, type, checked } = e.target;
         setForm((prev) => ({
           ...prev,

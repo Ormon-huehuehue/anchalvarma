@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect} from 'react'
+import React from 'react'
 import { Instagram, Facebook, Mail, Phone, MessageSquare } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import ContactForm from './ContactForm';
 
 
