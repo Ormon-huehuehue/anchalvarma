@@ -2,6 +2,7 @@
 import React, { useEffect} from 'react'
 import { Instagram, Facebook, Mail, Phone, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ContactForm from './ContactForm';
 
 
 
@@ -91,109 +92,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="p-8 md:col-span-3">
-            <h3 className="text-xl font-semibold">Send a Message</h3>
-            <p className="mt-2 text-muted-foreground">
-              Fill out the form below and I'll get back to you as soon as possible.
-            </p>
-
-            <form className="mt-8 space-y-6">
-              <div className="grid gap-6 sm:grid-cols-2">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium leading-none">
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="name"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium leading-none">
-                    Email Address <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Your email"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="grid gap-6 sm:grid-cols-2">
-                <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium leading-none">
-                    Phone Number
-                  </label>
-                  <input
-                    id="phone"
-                    type="tel"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="(123) 456-7890"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="service" className="text-sm font-medium leading-none">
-                    Service Interested In <span className="text-red-500">*</span>
-                  </label>
-                  <select
-                    id="service"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    required
-                  >
-                    <option value="">Select a service</option>
-                    <option value="bridal">Bridal Makeup</option>
-                    <option value="event">Special Event Makeup</option>
-                    <option value="lesson">Makeup Lesson</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="date" className="text-sm font-medium leading-none">
-                  Preferred Date
-                </label>
-                <input
-                  id="date"
-                  type="date"
-                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium leading-none">
-                  Your Message <span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  id="message"
-                  className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                  placeholder="Tell me about your event or any questions you have"
-                  required
-                ></textarea>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <input
-                  type="checkbox"
-                  id="consent"
-                  className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  required
-                />
-                <label htmlFor="consent" className="text-sm text-muted-foreground">
-                  I consent to having my information stored for contact purposes
-                </label>
-              </div>
-
-              <Button type="submit" className="w-full">
-                Send Message
-              </Button>
-            </form>
-          </div>
+          <ContactForm/>
 
 
         </div>
