@@ -23,7 +23,7 @@ export default function RootLayout({
         <SpeedInsights/>
           <Header/>
           {/* <SupabaseNav/> */}
-          <div className="px-5 md:px-10">
+          <div className="px-5 md:px-10 font-montserrat">
           {children}
           </div>
           <Footer/>

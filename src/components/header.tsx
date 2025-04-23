@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header 
-    className={`sticky flex justify-center top-0 z-10 bg-white transition-transform duration-300 ${
+    className={`sticky flex justify-center top-0 z-10 bg-white transition-transform duration-300 font-montserrat ${
       showHeader ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
