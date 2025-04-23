@@ -126,3 +126,15 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+
+@font-face {
+  font-family: 'Gistesy';
+  src: url('/fonts/Gistesy.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@theme {
+  --font-gistesy: "Gistesy", sans-serif;
+}

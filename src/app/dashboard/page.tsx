@@ -32,14 +32,14 @@ const page = async () => {
   }
 
 return (
-    <div className="px-8 h-[80dvh]">
+    <div className="md:px-8 h-[80dvh]">
       <SupabaseNav/>
       <h1 className="text-2xl font-semibold my-4">Form Submissions Dashboard</h1>
       {data?.length === 0 ? (
         <p>No submissions found.</p>
       ) : (
-        <div className="overflow-x-auto">
-          <table className="min-w-full table-auto border border-gray-200 text-sm">
+        <div className="mx-5">
+          <table className="min-w-full table-auto border border-gray-200 text-sm  ">
             <thead className="bg-gray-100">
               <tr>
                 <th className="border px-4 py-2">Full Name</th>

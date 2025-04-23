@@ -25,7 +25,7 @@ const PortfolioWidget = ({ item }: { item: itemProps }) => {
       const rect = ref.current.getBoundingClientRect()
       const elementCenter = rect.top + rect.height / 2
       const screenCenter = window.innerHeight / 2
-      const threshold = 80 // px range for being "centered"
+      const threshold = 150 // px range for being "centered"
 
       const distanceFromCenter = Math.abs(screenCenter - elementCenter)
       setIsCentered(distanceFromCenter < threshold)

@@ -13,7 +13,7 @@ const aboutSectionContent = [
 
 const About = () => {
   return (
-    <section id="about" className="bg-muted/50">
+    <section id="about" className="bg-muted/50 flex">
     <div className="container">
       <div className="grid gap-2 md:grid-cols-2 md:items-center">
         <div className="relative md:h-full md:w-full aspect-square overflow-hidden rounded-lg">

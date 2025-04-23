@@ -7,32 +7,32 @@ const portfolioData = [
   {
     imageUrl : "/bride5.jpeg",
     title : "Makeup",
-    caption : "Bridal / Editorial / Natural"
+    caption : "Bridal"
   },
   {
     imageUrl : "/anchal.jpeg",
     title : "Makeup",
-    caption : "Bridal / Editorial / Natural"
+    caption : "Natural"
   },
   {
     imageUrl : "/bride1.jpeg",
     title : "Makeup",
-    caption : "Bridal / Editorial / Natural"
+    caption : "Bridal"
   },
   {
     imageUrl : "/bride2.jpeg",
     title : "Makeup",
-    caption : "Bridal / Editorial / Natural"
+    caption : "Bridal"
   },
   {
     imageUrl : "/bride6.jpeg",
     title : "Makeup",
-    caption : "Bridal / Editorial / Natural"
+    caption : "Bridal"
   },
   {
     imageUrl : "/bride4.jpeg",
     title : "Makeup",
-    caption : "Bridal / Editorial / Natural"
+    caption : "Bridal"
   },
 ]
 
