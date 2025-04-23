@@ -8,21 +8,21 @@ const testimonials = [
     name : "Sarah",
     service : "bridal makeup",
     comment : "I couldn't have been happier with my wedding makeup! Not only did I look amazing, but my makeup lasted all day and night through tears, dancing, and countless hugs. Highly recommend!",
-    stars : 4
+    stars : 5
   },
   {
     imageUrl : "/anchal2.jpeg",
-    name : "Emily Rodriguez",
+    name : "Bhavya Khullar",
     service : "Special Event",
     comment : "I had my makeup done for a gala and received so many compliments! The makeup artist really listened to what I wanted and created a look that made me feel confident and beautiful.",
-    stars : 4
+    stars : 5
   },
   {
     imageUrl : "/bride4.jpeg",
-    name : "Sarah",
+    name : "Megha Bhatia",
     service : "Makeup Lesson",
     comment : "I couldn't have been happier with my wedding makeup! Not only did I look amazing, but my makeup lasted all day and night through tears, dancing, and countless hugs. Highly recommend!",
-    stars : 4
+    stars : 5
   }
 ]
 
