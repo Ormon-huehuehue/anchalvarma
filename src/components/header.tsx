@@ -51,7 +51,7 @@ const Header = () => {
       <div className="w-full md:mx-16 mx-5 flex h-16 items-center justify-between">
         <Link
           href="/"
-          className="text-3xl font-bold tracking-tight hover:text-muted-foreground transition-colors duration-200 
+          className="text-3xl font-medium tracking-tight hover:text-muted-foreground transition-colors duration-200 
           mx-auto md:mx-0 absolute ml-10  md:static md:translate-x-0 font-gistesy"
         >
           Anchal Varma

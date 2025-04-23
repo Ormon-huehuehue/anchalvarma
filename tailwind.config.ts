@@ -74,6 +74,8 @@ const config = {
       },
       fontFamily: {
         gistesy: ['Gistesy', 'cursive'],
+        montserrat : ['Montserrat', 'sans-serif'],
+        palanquin : ['Palanquin', 'sans-serif'],
       },
     },
   },
