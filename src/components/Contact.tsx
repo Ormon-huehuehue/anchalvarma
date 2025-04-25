@@ -2,7 +2,7 @@
 import React from 'react'
 import { Instagram, Facebook, Mail, Phone, MessageSquare } from "lucide-react";
 import ContactForm from './ContactForm';
-
+import Link from "next/link";
 
 
 const Contact = () => {
@@ -25,6 +25,9 @@ const Contact = () => {
             </p>
 
             <div className="mt-8 space-y-6">
+
+            <Link href="tel:+918750044212" target="_blank" rel="noopener noreferrer"
+              className="flex items-start gap-4">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                   <Phone className="h-5 w-5 text-primary" />
@@ -35,7 +38,10 @@ const Contact = () => {
                   <p className="mt-1 text-sm text-muted-foreground">Available Mon-Fri, 9am-6pm</p>
                 </div>
               </div>
+            </Link>
 
+              <Link href="mailto:info@anchalverma.in" target="_blank" rel="noopener noreferrer"
+              className="flex items-start gap-4">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                   <Mail className="h-5 w-5 text-primary" />
@@ -46,6 +52,10 @@ const Contact = () => {
                   <p className="mt-1 text-sm text-muted-foreground"></p>
                 </div>
               </div>
+              </Link>
+
+              <Link href="https://wa.me/09999099225" target="_blank" rel="noopener noreferrer"
+              className="flex items-start gap-4">
 
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
@@ -57,8 +67,10 @@ const Contact = () => {
                   <p className="mt-1 text-sm text-muted-foreground"></p>
                 </div>
               </div>
+              </Link>
 
-              <div className="flex items-start gap-4">
+              <Link href="https://www.instagram.com/anchalvermamua/" target="_blank" rel="noopener noreferrer"
+              className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                   <Instagram className="h-5 w-5 text-primary" />
                 </div>
@@ -67,18 +79,19 @@ const Contact = () => {
                   <p className="text-muted-foreground">@anchalvermamua</p>
                   <p className="mt-1 text-sm text-muted-foreground">DM me for quick questions</p>
                 </div>
-              </div>
+              </Link>
 
-              <div className="flex items-start gap-4">
+              <Link href="https://www.facebook.com/anchalvermamua/" target="_blank" rel="noopener noreferrer"
+              className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                   <Facebook className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Facebook</h4>
-                  <p className="text-muted-foreground">@anchalvermamua</p>
-                  <p className="mt-1 text-sm text-muted-foreground">Anchal Verma</p>
+                    <h4 className="font-medium">Facebook</h4>
+                    <p className="text-muted-foreground">@anchalvermamua</p>
+                    <p className="mt-1 text-sm text-muted-foreground">Anchal Verma</p>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="mt-8 pt-8 border-t">
