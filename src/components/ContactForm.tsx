@@ -168,7 +168,7 @@ const ContactForm = () => {
         </label>
       </div>
 
-      <Button type="submit" disabled={status === "loading"} className='font-light !font-montserrat text-white'>
+      <Button type="submit" disabled={status === "loading"} className='font-light !font-montserrat text-white w-full'>
         {status === "loading" ? "SUBMITTING..." : "SUBMIT"}
       </Button>
       {status === "success" && <p className="mt-2 text-muted-foreground">Form submitted successfully!</p>}
@@ -177,5 +177,4 @@ const ContactForm = () => {
   </div>
   )
 }
-
 export default ContactForm
