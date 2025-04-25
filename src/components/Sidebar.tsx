@@ -61,7 +61,7 @@ export default function Sidebar({
   return (
     <aside
       ref={sidebarRef}
-      className={`h-screen bg-white fixed left-0 z-10 flex flex-col transition-all duration-300 ease-in-out overflow-hidden ${
+      className={`h-screen bg-white fixed left-0 z-10 flex flex-col transition-all duration-300 ease-in-out overflow-hidden text-black/70 border-r-2 ${
         collapsed ? 'w-0' : 'w-64'
       }`}
     >

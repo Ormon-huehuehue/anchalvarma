@@ -13,10 +13,11 @@ const aboutSectionContent = [
 
 const About = () => {
   return (
-    <section id="about" className="bg-muted/50 flex">
-    <div className="container">
-      <div className="grid gap-2 md:grid-cols-2 md:items-center">
-        <div className="relative md:h-full md:w-full aspect-square overflow-hidden rounded-lg">
+    <div className='w-screen bg-primary'>
+    <section id="about" className="w-full flex justify-center items-center ">
+    <div className="w-screen">
+      <div className="grid gap-2 md:grid-cols-2 ">
+        <div className="relative md:h-full md:w-full aspect-square overflow-hidden rounded-lg md:rounded-none">
           <Image
             src="/anchal2.jpeg"
             alt="Makeup artist portrait"
@@ -24,24 +25,24 @@ const About = () => {
             className="object-cover"
           />
         </div>
-        <div className="space-y-6 px-5 py-5">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Me</h2>
+        <div className="space-y-6 px-5 py-10">
+          <h2 className="text-[3vw] font-bold tracking-tight sm:text-4xl text-white">About Me</h2>
           {aboutSectionContent.map((text, index)=>(
-            <p key={index} className="text-lg text-muted-foreground">
+            <p key={index} className="text-[1.2vw] text-white">
                 {text}      
             </p>
           ))}
          
-          <div className="flex gap-4">
+          <div className="flex gap-4 text-white">
             <Link href="https://www.instagram.com/anchalvermamua/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
-                <Instagram className="h-5 w-5" />
+                <Instagram />
                 <span className="sr-only">Instagram</span>
               </Button>
             </Link>
             <Link href="https://www.facebook.com/anchalvermamua/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
-                <Facebook className="h-5 w-5" />
+                <Facebook  />
                 <span className="sr-only">Facebook</span>
               </Button>
             </Link>
@@ -50,6 +51,7 @@ const About = () => {
       </div>
     </div>
   </section>
+  </div>
   )
 }
 

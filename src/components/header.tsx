@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header 
-    className={`sticky flex justify-center top-0 z-10 bg-white transition-transform duration-300 font-montserrat ${
+    className={`sticky flex justify-center top-0 z-10 bg-white transition-transform duration-300 font-montserrat text-muted-foreground ${
       showHeader ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
@@ -58,24 +58,24 @@ const Header = () => {
         </Link>
         <nav className="hidden md:flex gap-6">
           <Link href="/#about" className="text-sm font-medium transition-colors hover:text-primary">
-            About
+            ABOUT
           </Link>
           <Link href="/#services" className="text-sm font-medium transition-colors hover:text-primary">
-            Services
+            SERVICES
           </Link>
           <Link href="/#portfolio" className="text-sm font-medium transition-colors hover:text-primary">
-            Portfolio
+            PORTFOLIO
           </Link>
           <Link href="/#testimonials" className="text-sm font-medium transition-colors hover:text-primary">
-            Testimonials
+            TESTIMONIALS
           </Link>
           <Link href="/#contact" className="text-sm font-medium transition-colors hover:text-primary">
-            Contact
+            CONTACT
           </Link>
         </nav>
         <div className="flex items-center gap-4 absolute md:relative right-0 mr-3">
           <Link href="#contact">
-            <Button>Book Now</Button>
+            <Button>BOOK NOW</Button>
           </Link>
         </div>
       </div>

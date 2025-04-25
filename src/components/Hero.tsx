@@ -25,7 +25,7 @@ const Hero = () => {
             src="/poster.png"
             alt="Makeup artist at work"
             fill
-            className="object-cover ml-[10rem] min-w-[600px] h-full"
+            className="object-cover ml-[10rem] min-w-[50%] h-full overflow-x-visible"
             priority
           />
 
@@ -47,7 +47,7 @@ const Hero = () => {
             src="/portrait.png"
             alt="Makeup artist at work"
             fill
-            className="object-cover [object-position:20%_20%] scale-100 max-w-[680px] min-w-[680px]"
+            className="object-cover [object-position:20%_20%] scale-100 min-w-[50%]"
             priority
           />
         </div>
