@@ -56,7 +56,7 @@ const Contact = () => {
               </div>
               </Link>
 
-              <Link href="https://wa.me/9999099225" target="_blank" rel="noopener noreferrer"
+              <Link href="https://wa.me/+919999099225" target="_blank" rel="noopener noreferrer"
               className="flex items-start gap-4">
 
               <div className="flex items-start gap-4">
