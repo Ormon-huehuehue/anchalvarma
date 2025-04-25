@@ -61,7 +61,7 @@ export default function Sidebar({
   return (
     <aside
       ref={sidebarRef}
-      className={`h-screen bg-white fixed left-0 z-10 flex flex-col transition-all duration-300 ease-in-out overflow-hidden text-black/70  ${
+      className={`h-screen bg-white fixed left-0 z-10 flex flex-col transition-all duration-300 ease-in-out overflow-hidden ${
         collapsed ? 'w-0' : 'w-64 border-r-1'
       }`}
     >
@@ -72,7 +72,7 @@ export default function Sidebar({
       >
         Anchal Varma
       </h1>
-      <nav className="flex flex-col gap-2 mt-4">
+      <nav className="flex flex-col gap-2 mt-4 font-medium text-muted-foreground font-montserrat">
         {navItems.map((item, idx) => (
           <a
             key={idx}
