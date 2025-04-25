@@ -13,11 +13,11 @@ const aboutSectionContent = [
 
 const About = () => {
   return (
-    <div className='w-screen bg-primary'>
-    <section id="about" className="w-full flex justify-center items-center ">
+    <div className='w-screen bg-primary !my-0'>
+    <section id="about" className="w-full flex justify-center items-center">
     <div className="w-screen">
       <div className="grid gap-2 md:grid-cols-2 ">
-        <div className="relative md:h-full md:w-full aspect-square overflow-hidden rounded-lg md:rounded-none">
+        <div className="relative md:h-full md:w-full aspect-square overflow-hidden hidden md:block">
           <Image
             src="/anchal2.jpeg"
             alt="Makeup artist portrait"
@@ -25,10 +25,10 @@ const About = () => {
             className="object-cover"
           />
         </div>
-        <div className="space-y-6 px-5 py-10">
-          <h2 className="text-[3vw] font-bold tracking-tight sm:text-4xl text-white">About Me</h2>
+        <div className="space-y-6 px-10 md:py-15 lg:py-20 py-10 font-montserrat !font-light">
+          <h2 className="text-3xl md:text-4xl xl:text-[4vw] font-light font-gistesy tracking-tight text-white">About Me</h2>
           {aboutSectionContent.map((text, index)=>(
-            <p key={index} className="text-[1.2vw] text-white">
+            <p key={index} className="md:text-[1.2vw] text-md text-white">
                 {text}      
             </p>
           ))}

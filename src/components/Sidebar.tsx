@@ -10,11 +10,11 @@ import {
 import { useEffect, useState, useRef } from 'react'
 
 const navItems = [
-  { icon: <BookOpen size={20} />, label: 'About', link: '/#about' },
-  { icon: <Info size={20} />, label: 'Services', link: '/#services' },
-  { icon: <Workflow size={20} />, label: 'Portfolio', link: '/#portfolio' },
-  { icon: <UserSearch size={20} />, label: 'Testimonials', link: '/#testimonials' },
-  { icon: <Mail size={20} />, label: 'Contact', link: '/#contact' },
+  { icon: <BookOpen size={20} />, label: 'ABOUT', link: '/#about' },
+  { icon: <Info size={20} />, label: 'SERVICES', link: '/#services' },
+  { icon: <Workflow size={20} />, label: 'PORTFOLIO', link: '/#portfolio' },
+  { icon: <UserSearch size={20} />, label: 'TESTIMONIALS', link: '/#testimonials' },
+  { icon: <Mail size={20} />, label: 'CONTACT', link: '/#contact' },
 ]
 
 export default function Sidebar({
@@ -61,8 +61,8 @@ export default function Sidebar({
   return (
     <aside
       ref={sidebarRef}
-      className={`h-screen bg-white fixed left-0 z-10 flex flex-col transition-all duration-300 ease-in-out overflow-hidden text-black/70 border-r-2 ${
-        collapsed ? 'w-0' : 'w-64'
+      className={`h-screen bg-white fixed left-0 z-10 flex flex-col transition-all duration-300 ease-in-out overflow-hidden text-black/70  ${
+        collapsed ? 'w-0' : 'w-64 border-r-1'
       }`}
     >
       <h1

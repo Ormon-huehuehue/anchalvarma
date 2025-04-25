@@ -39,7 +39,7 @@ const portfolioData = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-16 md:py-24 bg-muted/50">
+    <section id="portfolio" className="py-16 md:py-24 px-5 bg-muted/50 w-screen flex flex-col items-center justify-center border-y-1">
     <div className="container">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Portfolio</h2>
@@ -54,7 +54,7 @@ const Portfolio = () => {
       </div>
       <div className="mt-12 text-center">
         <Link href="#contact">
-          <Button>Book Your Session</Button>
+           <Button className='font-light !font-montserrat font-white'>BOOK YOUR SESSION</Button>
         </Link>
       </div>
     </div>

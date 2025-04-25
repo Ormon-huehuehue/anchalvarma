@@ -168,10 +168,10 @@ const ContactForm = () => {
         </label>
       </div>
 
-      <Button type="submit" disabled={status === "loading"}>
-        {status === "loading" ? "Submitting..." : "Submit"}
+      <Button type="submit" disabled={status === "loading"} className='font-light !font-montserrat text-white'>
+        {status === "loading" ? "SUBMITTING..." : "SUBMIT"}
       </Button>
-      {status === "success" && <p className="text-green-500 mt-2">Form submitted successfully!</p>}
+      {status === "success" && <p className="mt-2 text-muted-foreground">Form submitted successfully!</p>}
       {status === "error" && <p className="text-red-500 mt-2">Something went wrong. Please try again.</p>}
     </form>
   </div>

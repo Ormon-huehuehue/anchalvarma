@@ -5,15 +5,14 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center w-screen h-screen !mx-0">
-
+    <section className="flex flex-col items-center w-screen h-screen !my-0 !py-0 !mx-0">
       {/* Mobile Banner */}
       <div className="relative w-full h-full md:hidden">
         <Image
           src="/banner_mobile_upscaled.jpg"
           alt="Makeup artist at work"
           fill
-          className="object-cover brightness-100 opacity-100 [object-position:0%_110%]"
+          className="object-cover brightness-100 opacity-100 [object-position:0%_100%]"
           priority
         />
       </div>

@@ -10,11 +10,13 @@ const Header = () => {
   const [collapsed, setCollapsed] = useState(true)
   const [showHeader, setShowHeader] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [handleScrollDisabled, setHandleScrollDisabled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
-
+      
+      if (handleScrollDisabled) return
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setShowHeader(false) // scrolling down
       } else {
@@ -30,15 +32,18 @@ const Header = () => {
 
   return (
     <header 
-    className={`sticky flex justify-center top-0 z-10 bg-white transition-transform duration-300 font-montserrat text-muted-foreground ${
+    className={`sticky flex justify-center top-0 z-10 bg-white transition-transform duration-300 font-montserrat text-muted-foreground border-b-1 ${
       showHeader ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
       <div className='flex items-center justify-center'>
       <button
               id = 'sidebar-button'
-              onClick={() => setCollapsed(!collapsed)}
-              className={`text-black duration-300 absolute left-0  hover:bg-primary p-2 ml-3  hover:text-white transition-all rounded-full ${!collapsed ? 'opacity-0' : 'opacity-100'}`}
+              onClick={() => {
+                setCollapsed(!collapsed)
+              }
+              }
+              className={`text-black duration-300 absolute left-0  hover:bg-primary p-2 ml-3 hover:text-white transition-all rounded-full ${!collapsed ? 'opacity-0' : 'opacity-100'}`}
             >
               <ChevronRight
                 size={20}
@@ -73,9 +78,9 @@ const Header = () => {
             CONTACT
           </Link>
         </nav>
-        <div className="flex items-center gap-4 absolute md:relative right-0 mr-3">
+        <div className="flex items-center gap-4 absolute md:relative right-0 mr-3  ">
           <Link href="#contact">
-            <Button>BOOK NOW</Button>
+            <Button className='font-light !font-montserrat text-white'>BOOK NOW</Button>
           </Link>
         </div>
       </div>

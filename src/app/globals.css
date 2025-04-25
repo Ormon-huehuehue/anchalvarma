@@ -140,8 +140,17 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Southampton';
+  src: url('/fonts/Southampton.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
 @theme {
   --font-gistesy: "Gistesy", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
   --font-palanquin: "Palanquin", sans-serif;
+  --font-amatic : "Amatic", "sans-serif";
+  --font-south : "Southampton", "sans-serif";
 }
