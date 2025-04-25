@@ -10,13 +10,13 @@ const Header = () => {
   const [collapsed, setCollapsed] = useState(true)
   const [showHeader, setShowHeader] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
-  const [handleScrollDisabled, setHandleScrollDisabled] = useState(false)
+  // const [handleScrollDisabled, setHandleScrollDisabled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
       
-      if (handleScrollDisabled) return
+      // if (handleScrollDisabled) return
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setShowHeader(false) // scrolling down
       } else {
