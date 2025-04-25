@@ -26,8 +26,10 @@ const Contact = () => {
 
             <div className="mt-8 space-y-6">
 
-            <Link href="tel:+918750044212" target="_blank" rel="noopener noreferrer"
-              className="flex items-start gap-4">
+            <a
+              href="tel:+918750044212"
+              className="flex items-start gap-4"
+              >              
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                   <Phone className="h-5 w-5 text-primary" />
@@ -38,7 +40,7 @@ const Contact = () => {
                   <p className="mt-1 text-sm text-muted-foreground">Available Mon-Fri, 9am-6pm</p>
                 </div>
               </div>
-            </Link>
+            </a>
 
               <Link href="mailto:info@anchalverma.in" target="_blank" rel="noopener noreferrer"
               className="flex items-start gap-4">
@@ -54,7 +56,7 @@ const Contact = () => {
               </div>
               </Link>
 
-              <Link href="https://wa.me/09999099225" target="_blank" rel="noopener noreferrer"
+              <Link href="https://wa.me/9999099225" target="_blank" rel="noopener noreferrer"
               className="flex items-start gap-4">
 
               <div className="flex items-start gap-4">
@@ -63,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Whatsapp</h4>
-                  <p className="text-muted-foreground">099 99 099225</p>
+                  <p className="text-muted-foreground">99 99 099225</p>
                   <p className="mt-1 text-sm text-muted-foreground"></p>
                 </div>
               </div>
