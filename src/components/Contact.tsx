@@ -36,7 +36,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <p className="text-muted-foreground">+91 8750044212</p>
+                  <p className="text-muted-foreground">+91 9990099476</p>
                   <p className="mt-1 text-sm text-muted-foreground">Available Mon-Fri, 9am-6pm</p>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const Contact = () => {
               </div>
               </Link>
 
-              <Link href="https://wa.me/+919999099225" target="_blank" rel="noopener noreferrer"
+              <Link href="https://wa.me/+919990099476" target="_blank" rel="noopener noreferrer"
               className="flex items-start gap-4">
 
               <div className="flex items-start gap-4">
@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Whatsapp</h4>
-                  <p className="text-muted-foreground">99 99 099225</p>
+                  <p className="text-muted-foreground">+91 9990099476</p>
                   <p className="mt-1 text-sm text-muted-foreground"></p>
                 </div>
               </div>
